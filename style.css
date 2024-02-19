@@ -21,7 +21,8 @@ main{
     font-family: "Amita", serif;
     font-weight: 800;
     font-size: 60px;
-    margin-top: 30px;
+    color: rgb(122, 46, 46);
+    text-shadow: 0 .2rem .5rem rgb(77, 9, 9);
 }
 .text-h3{
     text-align: center;
@@ -72,7 +73,7 @@ main{
     padding: 10px 20px;
     width: 1185px;
     background-color: blanchedalmond;
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid rgba(138, 138, 138, 0.62);
     position: sticky;
     top: 0;
     left: 0;
@@ -91,13 +92,16 @@ main{
     font-family: "Roboto", sans-serif;
     font-size: 30px;
     padding: .3rem 1rem;
+    border-bottom: 4px solid transparent;
     transition: all .5s;
 }
 .nav-li:hover{
-    background-color: brown;
-    color: #fff;
-    border-radius: 5px;
+    border-bottom: 4px solid brown;
     padding: .3rem 1rem;
+}
+.nav-li:active{
+    color: rgb(193, 142, 74);
+    border-bottom: 4px solid rgb(193, 142, 74);
 }
 
 /* MAIN */
@@ -123,15 +127,12 @@ main{
     width: 40%;
     min-height: 500px;
     background-color: #fff;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
     box-shadow: .1rem .1rem .6rem black;
-    transition: all .2s ease;
+    transition: all .4s ease;
     overflow: hidden;
 }
 .destinacions-img{
     width: 100%;
-    border-top-right-radius: 50px;
 }
 .card:hover{
     transform: scale(1.05);
@@ -165,6 +166,13 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all .4s ease-out;
+}
+.card-serveis:hover{
+    transform: scale(1.05);
+    background-color: rgba(255, 242, 227, 0.511);
+    box-shadow: .6rem .6rem .9rem rgba(0, 0, 0, 0.348);
+    overflow: hidden;
 }
 .div-serveis-img{
     width: 100%;
